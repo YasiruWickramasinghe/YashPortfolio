@@ -11,7 +11,7 @@ useEffect(()=>{
         showCursor: true,
         backDelay : 1500,
         backSpeed:60,
-        strings: ['FullStack Developer', 'Tech Lead', 'Freelancer',  'Web Developer', 'Mobile Developer' ],
+        strings: ['Software Engineer', 'FullStack Developer', 'Freelancer',  'Web Developer', 'Mobile Developer' ],
      });
 },[])
 
