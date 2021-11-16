@@ -14,6 +14,11 @@
     justify-content: center;
     transition: all 1s ease;
 
+    @include mobile{
+        width: 150px;
+        right: -150px; 
+    }
+
     &.active{
         right: 0;
     }
@@ -27,6 +32,11 @@
         color: white;
         width: 60%;
 
+        @include mobile{
+            font-size: 15px;
+            font-weight: 140;
+        }
+
         li{
             margin-bottom: 25px;
             a{
@@ -38,6 +48,10 @@
             &:hover{
 
                 font-weight: 500;
+
+                @include mobile{
+                    font-weight: 250;
+                }
             }
         }
     }
