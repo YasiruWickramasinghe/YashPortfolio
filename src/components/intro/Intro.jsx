@@ -11,7 +11,7 @@ useEffect(()=>{
         showCursor: true,
         backDelay : 1500,
         backSpeed:60,
-        strings: ['Software Engineer', 'FullStack Developer', 'Freelancer',  'Web Developer', 'Mobile Developer' ],
+        strings: ['Trainee Software Engineer','FullStack Developer','Undergraduate Student','Tech Enthusiast', 'Mobile Developer', 'Freelancer',  'Problem solver' ],
      });
 },[])
 
@@ -24,8 +24,8 @@ useEffect(()=>{
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hi There, I'm</h2>
-                    <h1>YASIRU WICKRAMASINGHE</h1>
+                    <h2>Yasiru Wickramasinghe</h2>
+                    <h1>B.Sc. IT (Hons) Specialized Software Engineering (Reading)</h1>
                     <h3> <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
