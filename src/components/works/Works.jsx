@@ -9,7 +9,7 @@ export default function Works() {
     const data = [
         {
             id: "1",
-            icon: "./assets/mobile.png",
+            icon: "./assets/globe.png",
             title: "Web Application Development",
             desc:
               "Design fully integrated web application for any kind of business organization ",
@@ -18,7 +18,7 @@ export default function Works() {
           },
           {
             id: "2",
-            icon: "./assets/globe.png",
+            icon: "./assets/mobile.png",
             title: "Mobile Application Development",
             desc:
               "Develop mobile application Be more interacted with customers with having simple mobile app.",
@@ -44,6 +44,7 @@ export default function Works() {
 
     return (
         <div className="works" id="works">
+            {/* <h1>Services</h1> */}
                 <div 
                     className="slider" 
                     style={{transform: `translateX(-${currentSlide * 100}vw)` }}

@@ -28,7 +28,7 @@ useEffect(()=>{
                     <h1>B.Sc. IT (Hons) Specialized Software Engineering (Reading)</h1>
                     <h3> <span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio">
+                <a href="#about">
                     <img src="assets/down.png" alt="" />
                 </a>
             </div>

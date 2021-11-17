@@ -21,12 +21,12 @@ function App() {
       <div className="sections">
         <Intro/>
         <About/>
-        <Interest/>
-        <Works/>
-        <Portfolio/>
         <Testimonials/>
         <Skills/>
-        <Contact/>
+        <Interest/>
+        <Portfolio/> 
+        <Works/>
+        <Contact/>      
       </div>
     </div>
   );
