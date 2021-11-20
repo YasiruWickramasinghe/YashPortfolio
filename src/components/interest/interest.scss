@@ -46,7 +46,6 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-            // background-color: yellowgreen;
 
             .item{
                 width: 220px;
@@ -57,7 +56,6 @@
                 justify-content: center;
                 position: relative;
                 flex-direction: column;
-                // background-color: yellow;
 
                 @include mobile{
                     width: 150px;

@@ -25,7 +25,7 @@ export default function Interest() {
                 <div className="item">
                 <div className="roundItem">
                     <MultilineChart className="icon" />
-                    </div>
+                </div>
                     <h3>Distributed Computing</h3>
                 </div>
                 <div className="item">

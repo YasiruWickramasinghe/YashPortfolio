@@ -1,22 +1,28 @@
 @import "../../global.scss";
 
 .skills{
-    background-color: rgb(240, 0, 0);
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .container{
-        background-color: rgb(97, 66, 66);
+
         width: 90%;
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        flex-direction: column;
         margin: 10px;
+        padding-top: 10px;
         
-    
+
+        @include mobile{
+            width: 90%;
+            padding-top: 10px;
+        }
+
         h1{
             font-size: 30px;
     
@@ -25,65 +31,102 @@
             }
         }
 
-        .top{
+        .itemContainer{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+            .item{
+                width: 400px;
+                height: 480px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                flex-direction: column;
+                // background-color: yellow;
+
+                @include mobile{
+                    width: 150px;
+                    height: 100px;
+                }
+
+
+                .cardItem{
+
+                    width: 350px;
+                    height: 450px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    background-color: #265b6b;
+                    box-shadow: 0px 0px 15px -8px rgb(48, 48, 48);
+                    flex-direction: column;
+                    transition: all 1s ease;
+
+                    
+                    @include mobile{
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+
+                    h2{
+                        font-size: 16px;
+                        color: white;
+                        margin: 10px;
+                    }
+
+                    hr{
+                        width: 320px;
+                    }
+
+                    .skillBlock{
+
+                        width: 320px;
+                        height: 90px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .skill{
+
+                            width: 100px;
+                            height: 90px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            //background-color: yellow;
             
+                            @include mobile{
+                                width: 150px;
+                                height: 100px;
+                            }
+                            
+                            .icon{
+                                color: white;
+                                width: 45px;
+                                height: 45px;
+                            }
 
-            @include mobile{
-                padding-right: 0px;    
-            }
-            h2{
-                font-size: 20px;
-
-                @include mobile{
-                    font-size:12px;
+                            h4{
+                                font-size: 10px;
+                                color: white;
+                            }
+                        }    
+                    }     
                 }
-            }
-
-            .icon{
-                font-size: 70px;
-            }
-
-
+            }    
         }
-
-        .center{
-            @include mobile{
-                padding-right: 0px;    
-            }
-            h2{
-                font-size: 20px;
-
-                @include mobile{
-                    font-size:12px;
-                }
-            }
-
-            .icon{
-                font-size: 70px;
-            }
-
-
-        }
-
-        .bottom{
-            @include mobile{
-                padding-right: 0px;    
-            }
-            h2{
-                font-size: 20px;
-
-                @include mobile{
-                    font-size:12px;
-                }
-            }
-
-            .icon{
-                font-size: 70px;
-            }
-
-        }
-
-
     }
 
    
