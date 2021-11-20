@@ -6,11 +6,110 @@
     flex-direction: column;
     align-items: center;
 
-    h1{
-        font-style: 50px;
+    .container{
+
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding-top: 50px;
 
         @include mobile{
-            font-size: 20px;
+            width: 90%;
+            padding-top: 5px;
+        }
+
+        h1{
+            font-size: 40px;
+    
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        h2{
+            padding-top: 40px;
+            font-size: 16px;
+            color: white;
+    
+            @include mobile{
+                padding-top: 10px;
+                font-size: 11px;
+            }
+        }
+
+        .itemContainer{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            // background-color: yellowgreen;
+
+            .item{
+                width: 220px;
+                height: 300px;
+                margin: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                flex-direction: column;
+                // background-color: yellow;
+
+                @include mobile{
+                    width: 150px;
+                    height: 100px;
+                }
+
+
+                .roundItem{
+
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    background-color: rgb(255, 255, 255);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    position: relative;
+
+                    @include mobile{
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    .icon{
+                        color: #1d809f;
+                        font-size: 80px;
+
+                        @include mobile{
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+
+                h3{
+                        margin-top: 30px;
+                        font-size: 18px;
+                        color: rgb(255, 255, 255);
+            
+                    @include mobile{
+                        margin-top: 10px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+            
+
+            
         }
     }
+
+    
 }
