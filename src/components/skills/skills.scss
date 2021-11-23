@@ -64,7 +64,7 @@
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    background-color: #265b6b;
+                    background-color: $mainColor;
                     box-shadow: 0px 0px 15px -8px rgb(48, 48, 48);
                     flex-direction: column;
                     transition: all 1s ease;
@@ -81,7 +81,7 @@
 
                     h2{
                         font-size: 16px;
-                        color: white;
+                        color: #00c3ff;
                         margin: 10px;
                     }
 
@@ -99,28 +99,32 @@
 
                         .skill{
 
-                            width: 100px;
-                            height: 90px;
+                            width: 90px;
+                            height: 80px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             flex-direction: column;
-                            //background-color: yellow;
+                            transition: all 0.1s ease;
             
                             @include mobile{
                                 width: 150px;
                                 height: 100px;
                             }
+
+                            &:hover{
+                                transform: scale(1.05);
+                            }
                             
                             .icon{
-                                color: white;
                                 width: 45px;
                                 height: 45px;
                             }
 
                             h4{
+                                padding-top: 5px;
                                 font-size: 10px;
-                                color: white;
+                                color: #00c3ff;
                             }
                         }    
                     }     
